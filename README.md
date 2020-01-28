@@ -31,10 +31,10 @@ The API has 2 query parameters
           
 Once the server starts use cUrl command to execute the api (sample command)
 
-#execute
+# Execute
 curl -X GET 'http://localhost:15000/v1/webcrawler/link?url=http://google.com&depth=3'
 
-#Design
+# Design
 1. The algorithm uses DFS ( Depth First Search ) approach. This means that the depth filed 
 in the parameter is taken and for a particular node(page link) all the depth nodes are
 listed and for each node again the depth is reached. This means that the last depth level
@@ -55,7 +55,7 @@ As mentioned this equation i have implemented for convenience.
 5. The complexity of this algorithm is, O(V+E) where V is vertices and E is edges.
 Now since i have equated both V and E internally, its O(n) where n is the number of unique nodes
 
-#improvements
+# Improvements
 Some of the other things which can be added to the project
 1. Swagger for better user interface to play with the API
 2. A Cache server
